@@ -80,9 +80,6 @@ async function deployConfiguration() {
   // Step 4: Register PoolAddressesProvider contract with PoolAddressesProviderRegistry
   await poolAddressProviderRegistry.registerAddressesProvider(poolAddressProvider.address, 1);
 
-  // Step 5: Register ACL Manager to the pool Provider
-  await poolAddressProvider.setACLManager(ACLManager.address);
-
   console.log('PoolAddressesProvider address:', poolAddressProvider.address);
   console.log('PoolAddressesProviderRegistry address:', poolAddressProviderRegistry.address);
   console.log('ACLManager address:', ACLManager.address);
