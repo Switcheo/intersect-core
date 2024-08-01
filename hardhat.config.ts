@@ -87,14 +87,14 @@ const hardhatConfig = {
   namedAccounts: {
     ...DEFAULT_NAMED_ACCOUNTS,
   },
-  external: {
-    contracts: [
-      {
-        artifacts: './temp-artifacts',
-        deploy: 'node_modules/@aave/deploy-v3/dist/deploy',
-      },
-    ],
-  },
+  // external: {
+  //   contracts: [
+  //     {
+  //       artifacts: './temp-artifacts',
+  //       deploy: 'node_modules/@aave/deploy-v3/dist/deploy',
+  //     },
+  //   ],
+  // },
 };
 
 export default hardhatConfig;
